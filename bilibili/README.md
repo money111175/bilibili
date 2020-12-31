@@ -1,21 +1,33 @@
 # bilibili
+B站移动端开发
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
+技术栈
+vue + vuex + vue-router + ES6/7 + less + flex + vant
+
+
+
+项目运行
+
+cd bilibili
+
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+功能
+评论 -- 完成
+发表评论 -- 完成
+登录功能 -- 完成
+注册功能 -- 完成
+权限验证 -- 完成
+筛选分类 -- 完成
+上传头像 -- 完成
+下拉加载 -- 完成
+视频播放 -- 完成
+推荐文章 -- 完成
+收藏文章 -- 完成
+关注用户 -- 完成
+编辑个人信息 -- 完成
+
+
+
