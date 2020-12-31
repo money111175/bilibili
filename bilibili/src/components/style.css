@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?fb99');
+  src:  url('fonts/icomoon.eot?fb99#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fb99') format('truetype'),
+    url('fonts/icomoon.woff?fb99') format('woff'),
+    url('fonts/icomoon.svg?fb99#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-home2:before {
+  content: "\e901";
+}
+.icon-office:before {
+  content: "\e903";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-dice:before {
+  content: "\e915";
+}
+.icon-mic:before {
+  content: "\e91e";
+}
+.icon-file-empty:before {
+  content: "\e924";
+}
+.icon-map:before {
+  content: "\e94b";
+}
+.icon-switch:before {
+  content: "\e9b6";
+}

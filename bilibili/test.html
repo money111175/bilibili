@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let arr = [{
+        comment_id: 1,
+        user_id: 43,
+        comment_date: "04-23",
+        comment_content: "蜡笔小新很好看!",
+        parent_id: null
+    }, {
+        comment_id: 2,
+        user_id: 19,
+        comment_date: "04-24",
+        comment_content: "还不错哦!很好看",
+        parent_id: null
+    }, {
+        comment_id: 3,
+        user_id: 17,
+        comment_date: "04-25",
+        comment_content: "我也感觉蜡笔小新很好看",
+        parent_id: "1"
+    }, {
+        comment_id: 4,
+        user_id: 14,
+        comment_date: "04-26",
+        comment_content: "我感觉机器猫更好看一点",
+        parent_id: "3"
+    }, {
+        comment_id: 5,
+        user_id: 13,
+        comment_date: "04-27",
+        comment_content: "好看,已三连!",
+        parent_id: null
+    }, {
+        comment_id: 6,
+        user_id: 21,
+        comment_date: "04-26",
+        comment_content: "你是机器猫的粉丝吗",
+        parent_id: "4"
+    }, {
+        comment_id: 7,
+        user_id: 14,
+        comment_date: "04-27",
+        comment_content: "是的,我是机器猫的粉丝",
+        parent_id: "6"
+    }, {
+        comment_id: 8,
+        user_id: 23,
+        comment_date: "04-27",
+        comment_content: "我更喜欢白嫖!",
+        parent_id: "5"
+    }, {
+        comment_id: 9,
+        user_id: 25,
+        comment_date: "04-28",
+        comment_content: "你个白嫖怪",
+        parent_id: "8"
+    }]
+
+    function fn(temp) {
+        let arr1 = []
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].parent_id == temp) {
+                // console.log(arr[i]);
+                arr1.push(arr[i])
+                    // 将arr[i]放到数组arr1里面
+                arr[i].child = fn(arr[i].comment_id)
+            }
+        }
+        return arr1
+            // console.log(arr1);
+    }
+    const res = fn(null)
+    console.log(res);
+
+    // for (var i = 0; i < arr.length; i++) {
+    //     if (arr[i].parent_id == null) {
+    //         // console.log(arr[i]);
+    //         arr1.push(arr[i])
+    //             // 将arr[i]放到数组arr1里面
+    //         for (var j = 0; j < arr.length; j++) {
+    //             if (arr[j].parent_id == arr[i].comment_id) {
+    //                 arr[i].child = [arr[j]]
+    //                     // 在一级评论中创建一个child数组，之后将一级评论所对应的二级评论放到对应的一级评论的child数组中
+    //                 for (var p = 0; p < arr.length; p++) {
+    //                     if (arr[j].comment_id == arr[p].parent_id) {
+    //                         arr[j].child = [arr[p]]
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 假如一张纸厚度为0.0001米，折叠多少次可以超过10000米
+    // let a = 0.0001
+    // let num = 0
+
+    // function fn() {
+    //     a *= 2
+    //     num++
+    //     if (a < 10000) {
+    //         fn()
+    //     }
+    //     console.log(num);
+    // }
+    // fn()
+</script>
+
+</html>
